@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Exercice 1*/
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+section>h2 {
+    color: green;
+}
+
+article>p {
+    color: blue;
+    font-style:italic ;
+}
+
+/*Exercice 2 */
+.div-ex-2 {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+.div-ex-2:hover{
+    translate: 100px;
+}
+
+@media screen and (max-width:1000px){
+    .div-ex-2 {
+        background-color: green;
+    }
+}
+
+@media screen and (max-width:700px){
+    .div-ex-2 {
+        background-color: red;
+    }
+}
+
+/*Exercice 3*/
+.nav-bar {
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: wheat;
+}
+
+.About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61, 61, 61);
+    height: 10vh;
+    width: 150px;
+    text-decoration: none;
+    color: wheat;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 30vw;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: wheat;
+}
+
+.News {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: wheat;
+}
+
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    text-decoration: none;
+}
+
+/*Exercice 4*/
+.div-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-bolder-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.div-bolder-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.div-bolder-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.div-center {
+    display: flex;
+    height: 200px;
+    width: 300px;
+    border: none;
+    background-color: black;
+}
+
+.div-top-left {
+    display: flex;
+    height: 200px;
+    width: 300px;
+    border: none;
+    background-color: yellow;
+}
+
+.div-bottom-left {
+    display: flex;
+    height: 200px;
+    width: 300px;
+    border: none;
+    background-color: green;
+}
+
+.div-top-right {
+    display: flex;
+    height: 200px;
+    width: 300px;
+    border: none;
+    background-color: red;
+}
+
+.div-bottom-right {
+    display: flex;
+    height: 200px;
+    width: 300px;
+    border: none;
+    background-color: gray;
+}
+
+/*Exercice 5*/
+#boite {
+    background-color: red;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation-name: redBox;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+}
+
+@keyframes redBox {
+    0%{
+        left: 10px;
+    }
+    50%{
+        left: 400px;
+    }
+    100%{
+        left: 10px;
+    }
+}
